@@ -4,7 +4,7 @@ run: build
 	bin/main
 
 build:
-	gcc -c src/*.c ${CFLAGS} -I include 
+	gcc -c src/*.c ${CFLAGS} -Iinclude
 	gcc *.o -o bin/main -lSDL2main -lSDL2 -lSDL2_image
 
 clean:
